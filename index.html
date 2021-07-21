@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+h1{
+  font-weight:800 ;
+}
+
+   h2{
+    /* there is an error, the property is not running there */
+font-family: Montserrat, sans-serif;
+font-size: 42px;
+font-weight: 900;
+line-height: 57px;
+text-align: left;
+text-size-adjust: 100%;
+text-transform: none;
+  } 
+  .p2-wrapper{
+     background-color:white; 
+    padding-left: 60px;
+    padding-top: 30px;
+
+}
+h3{
+        font-family: Montserrat, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+xxx, h4{
+  font-family: poppins,sans-serif;
+ /* Fallback: Set a background color. */
+ background-color: cyan;
+ font-weight: 700;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+    37deg,
+        #f17f4a 10.666%, 
+        #af62a9 16.666%, 
+        #a34594 33.333%, 
+        #F18F43 33.333%, 
+        #4c19d8 50%, 
+        #8B9862 50%, 
+        #cd2cd3 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  font-size: 25px;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  /* background-clip:content-box; */
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.25s ease forwards;
+  
+	 }
+   
+h4:hover{
+    animation: rainbow-text-simple-animation 0.3s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+
+   
+      
+
+      
+
+</style>
+
+
+<body>
+
+<div class="slider-wrapper">
+
+<nav class="navbar navbar" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+    </div>
+    <ul class="nav navbar-nav">
+        <li><img src="http://imroz.rainbowit.net/assets/images/logo/logo-symbol-dark.png" style="width:60px; height: 60px;"></li>
+      <li class="active"><a href="#">Home</a></li>
+      
+      <li><a href="#">Service </a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blocks </a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+<!-- Logos portion -->
+<ul class="nav navbar-nav navbar-right" >
+      <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a></li>
+      <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></li>
+      <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></li>
+      <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li>
+    <li class="buynow" style="margin: 10px;"><button class="button button4">BUY NOW</button></li>
+    
+    </ul>
+
+    
+  </div>
+    </nav>
+<br><br><br><br><br>
+  <!-- nav bar ends -->
+  <div class="data ">
+<div class="data aaa">
+ <h4 class="xxx">FREELANCE DIGITAL DESIGNER</h4>
+
+ <br>
+
+<h2>Hello, I'm   <span style="color: #FD4766;">Zain.</span></h2>
+<p>
+  I’m working on a professional, visually sophisticated and technologically <br>
+proficient, responsive and multi-functional React Template Imroz.
+</p>
+<!-- <button>Download CV </button> -->
+<li class="buynow" style="margin: 10px; list-style-type: none; font-size: 28px;"><button class="button button4">DOWNLOAD CV</button></li>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ </div>
+
+</div>
+
+
+
+
+<!-- 2nd Page begins -->
+<div class="p2-wrapper">
+<img src="potrait.jpg" style="height: 500px; width: 350px; padding-right: 25px;">
+  <div class="aaa ">
+      <h4>Read About Me</h4>
+      <h1>My About</h1>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration <br>
+         in some form, by injected humour, or randomised words which dont look even slightly believable.<br>
+         If you are going to use a passage of Lorem Ipsum,
+        </p>
+
+        <div class="container">
+          <div class="fitem"><h3>Educational Skill</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+          <div class="fitem"><h3>My Strategy</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+          </div>
+      
+          <div class="container">
+            <div class="fitem"><h3>Development Skill</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+            <div class="fitem"><h3>My Quality</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+            </div> 
+
+      </div>
+      <br>
+      
+      <!-- <div class="container">
+        <div class="fitem"><h3>Educational Skill</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+        <div class="fitem"><h3>My Strategy</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+        </div>
+    
+        <div class="container">
+          <div class="fitem"><h3>Development Skill</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+          <div class="fitem"><h3>My Quality</h3>Lorem ipsum dolor sit amet, onecis et mollis.</div>
+          </div> 
+       -->
+  </div>
+  
+
+
+
+</div>
+<br><br><br>
+<div class="p3-wrapper">
+<div class="aaa" style="text-align: center;">
+  <h4 class="xxx">My Top Clients</h4>
+</div>
+<h1 style="text-align: center;">Clients Meeting With Me</h1>
+<img src="http://imroz.rainbowit.net/assets/images/about/about-10.png" style="width: 80%;height: 70%; padding-left: 350px;">
+
+
+<br><br><br><br><br><br>
+<!-- For First Row  LOGO Elemets  -->
+
+  <div class="container">
+    <div class="fitem"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-01.png" alt="Logo Images"></div>
+    <div class="fitem"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-03.png" alt="Logo Images"></div>
+    <div class="fitem2"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-05.png" alt="Logo Images"></div>
+    <div class="fitem2"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-02.png" alt="Logo Images"></div>
+
+<!-- For Secong Row Logo ELements -->
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="fitem"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-03.png" alt="Logo Images"></div>
+  <div class="fitem"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-06.png" alt="Logo Images"></div>
+  <div class="fitem2"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-02.png" alt="Logo Images"></div>
+  <div class="fitem2"><img src="http://imroz.rainbowit.net/assets/images/brand/brand-07.png" alt="Logo Images"></div>
+
+
+</div>
+
+
+</div>  <!-- main div of class 3rd Wrapper -->
+
+<br><br><br><br>
+
+<div class="p4-wrapper">
+
+<div style="padding-left: 30px;"><img src="about-4.png" style="height: fit-content; width: fit-content;"></div>
+<div style="padding-left:25px; font-family:Poppins, sans-serif;font-size: 18px;font-weight:400;
+line-height: 30px; text-align: left;text-size-adjust: 100%">
+<h2>My Best Performance</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   Enim exercitationem impedit iure quia quo recusandae? adipisicing elit.<br> Enim exercitationem impedit iure quia quo recusandae?
+<br>
+  Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. Enim exercitationem impedit iure quia quo recusandae?
+  
+   The Philosophy Of business analytics
+   Fast-Track Your business
+   Fast-Track Your business
+   Lies And Damn Lies About business
+  <br>
+  <br>
+<ul class="list-style">
+  <li class="arrow" style="list-style-type: none;"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>The Philosophy Of business analytics</li>
+  <li class="arrow" style="list-style-type: none;" ><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>Fast-Track Your business</li>
+  <li class="arrow" style="list-style-type: none;"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>Fast-Track Your business</li>
+  <li class="arrow" style="list-style-type: none;"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="20 6 9 17 4 12"></polyline></svg>Lies And Damn Lies About business</li>
+</ul>
+<br><br>
+<li class="buttons" style="margin: 10px; list-style-type: none;padding-left: 30px;"><button class="button button4">SEE MY SKILL</button></li>  
+
+  </div>
+
+</div>  <!--  This is the main div of 4th Wrapper -->
+
+<div class="p5-wrapper">
+<h4 style="text-align: center;">our project</h4>
+<h2 style="text-align: center;">Some of My Recent Works</h2>
+<p style="text-align: center;">There are many variations of passages of Lorem Ipsum available,<br>
+  but the majority have suffered alteration.</p>
+
+<!-- CARDS PORTION -->
+<div class="allcards">
+  <!-- card 1 -->
+<div class="cards">
+  <img class="card_img" src="a.jpg">
+<div class="info">
+<h1>
+Classy
+</h1>
+<p>
+Classy Pics of Simple people.
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 2 -->
+<div class="cards">
+  <img class="card_img" src="b.jpg">
+<div class="info">
+<h1>
+Buildings
+</h1>
+<p>
+Covering Archi. & Const...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 3 -->
+<div class="cards">
+  <img class="card_img" src="c.jpg">
+<div class="info">
+<h1>
+Sport & Game 
+</h1>
+<p>
+Games for Fitness...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 4 -->
+<div class="cards">
+  <img class="card_img" src="d.jpg">
+<div class="info">
+<h1>
+Natural Beauty
+</h1>
+<p>
+Real charm;no  fakeness...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- ending of all cards -->
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- CARDS PORTION -->
+<div class="allcards">
+  <!-- card 5 -->
+<div class="cards">
+  <img class="card_img" src="e.jpg">
+<div class="info">
+<h1>
+Hotness
+</h1>
+<p>
+Hotness that make desires bad...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 6 -->
+<div class="cards">
+  <img class="card_img" src="f.jpg">
+<div class="info">
+<h1>
+Artistic
+</h1>
+<p>
+Art Touch with creative eye...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 7 -->
+<div class="cards">
+  <img class="card_img" src="g.jpg">
+<div class="info">
+<h1>
+Culture & Trad
+</h1>
+<p>
+Touchhing the Tradition...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- card 8 -->
+<div class="cards">
+  <img class="card_img" src="h.jpg">
+<div class="info">
+<h1>
+Party Setup
+</h1>
+<p>
+For tasting and trying real life...
+</p>
+<a href="#" class="btn">Read More</a>
+  </div>
+</div>    
+
+<!-- ending of all cards -->
+</div>
+<br><br<br><br><br<br><br><br<br><br><br<br><br><br<br><br><br<br><br><br<br><br><br<br><br><br<br><br><br><br<br><br><br<br><br><br><br<br><br><br<br>
+<li class="viewprojs" style="margin: 10px;list-style-type: none; ;"><button class="button button4">VIEW PROJECTS</button>
+</div>
+<br>
+
+<div class="hireme">
+
+ <br<br><br><br<br><br><br><br>
+  <h4 class="xxx">Let's Say hi</h4>
+
+
+<h1>Hire Me.</h1>
+
+<img src="phone2.jpg" style="float: right;height: 400px;width: 300px;">
+<p>Call Us Directly:  <b>+92-3149667979</b></p>
+<p>Contact Email: <b>181018@students.au.edu.pk</b></p>
+<form style="float: left;padding-bottom: 50px;">
+  
+   
+    <input type="name" style="border-width:2px;width: 800px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name *">
+    <br>
+    <input type="email" style="border-width:2px ;width: 800px;" class="form-control" id="exampleInputPassword1" placeholder="Your Email *">
+    <br>
+    <input type="subject" style="border-width:2px; width: 800px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Write a Subject">
+    <br>
+    <input type="message" style="border-width:2px; width: 800px;height: 100px;" class="form-control" id="exampleInputEmail1" aria-describedby="text" placeholder="Your Message">
+    <br><br>
+    <button class="button button4" style="align-items: center; border-radius: 15px;border: solid black 4px;">SUBMIT NOW</button>
+
+    
+  
+  </form>
+  </div>
+  
+  </div>
+
+<!-- form data -->
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="last-wrapper" style="bottom: auto;padding: 200px;">
+
+<h1>Ready to Start Creating Standard Website</h1>
+<button class="button button4" style="align-items: center; border: solid black 2px;border-radius: 5px;">SUBMIT NOW</button>
+</div>
+
+<!-- LAST DIV FINALIZING THE WORK -->
+<div class="b-last-wrapper" style="background-color: rgb(1,0,1);padding: 20px;display: flex;">
+<img src="http://imroz.rainbowit.net/assets/images/logo/logo-light.png"  style="display: flex;"width="131px" height="60px">
+
+<div class="social" style="padding-top: 15px;display: flex;">
+  <li class="social-share rn-lg-size d-flex justify-content-center liststyle">
+  <li  style="display: flex;padding-left:380px;padding-right: 35px ;list-style-type: none ;"><a href="https://www.facebook.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a></li>
+  <li style="list-style-type: none;padding-right: 35px"><a href="https://www.linkedin.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></li>
+  <li style="list-style-type: none;padding-right: 35px"><a href="https://www.instagram.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></li>
+  <li style="list-style-type: none;padding-right: 35px"><a href="https://twitter.com/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li></ul>
+
+</div>
+
+
+<p style="float: right;padding-top: 30px;">Copyright © 2021 Rainbow-Themes. All Rights Reserved.</p>
+</div>
+
+
+</body>
+</html>
